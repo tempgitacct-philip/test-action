@@ -11,4 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run a one-line script
-        run: echo "Hello, World!"
+        run: echo "below script execution"
+      - name: execute permission
+        run: chmod +x a.sh
+      - name: running script
+        run: ./a.sh
