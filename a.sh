@@ -1,2 +1,3 @@
 touch abc
-echo "outiing from server"
+echo "outing from server $MY_SECRET"
+

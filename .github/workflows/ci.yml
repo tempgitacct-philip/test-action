@@ -16,3 +16,5 @@ jobs:
         run: chmod +x a.sh
       - name: running script
         run: ./a.sh
+        env:
+          MY_SECRET: ${{ secrets.MY_SECRET }}
