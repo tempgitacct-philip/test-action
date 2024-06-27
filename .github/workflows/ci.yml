@@ -27,5 +27,5 @@ jobs:
       - name: listing output
         run: ls -al output/
       - name: printing data
-        run : cat /output/output.txt
+        run : cat output/output.txt
 
