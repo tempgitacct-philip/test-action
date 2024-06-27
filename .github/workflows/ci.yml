@@ -15,11 +15,13 @@ jobs:
       - name: execute permission
         run: chmod +x a.sh
       - name: running script
-        run: ./a.sh > output.txt
+        run: ./a.sh > output/output.txt
         env:
           MY_SECRET: ${{ secrets.MY_SECRET }}
       - uses: actions/upload-artifact@v4
         with:
           name: my-artifact
           path: output/output.txt
+      - name: listing output
+        run: ls -al output/
 
